@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require("mongoose");
+const routes = require("./routes");
 
 const app = express();
 
@@ -17,7 +18,8 @@ mongoose.connect(
     {
         useCreateIndex: true,
         useNewUrlParser: true
-    }
+    },
+    console.log("mongoDB is connected")
 )
 
 app.listen(PORT, () => console.log(`API Server is listening on PORT ${PORT}`));
