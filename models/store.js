@@ -25,6 +25,9 @@ const storeSchema = new Schema({
     image: {
         type: String
     },
+    rating: {
+        type: String
+    },
     url: {
         type: String
     }
