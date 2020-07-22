@@ -10,7 +10,7 @@ export default {
         return axios.get("/api/stores")
     },
     deleteStore: function(storeData) {
-        return axios.delete("/api/stores" + id);
+        return axios.delete("/api/stores");
     },
     // Save a store to the database
     saveStore: function(storeData) {

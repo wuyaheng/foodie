@@ -13,10 +13,10 @@ class Saved extends Component {
     };
 
     componentDidMount() {
-        this.getSavedBooks();
+        this.getSavedStores();
     }
 
-    getSavedBooks = () => {
+    getSavedStores = () => {
         API.getSavedStores()
         .then(res => 
             this.setState({
