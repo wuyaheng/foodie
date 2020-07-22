@@ -7,7 +7,7 @@ router.route("/")
     .get(storeController.findAll)
     .post(storeController.create);
 
-// Matches with /api/books/:id
+// Matches with /api/stores/:id
 router.route("/:id")
     .get(storeController.findById)
     .put(storeController.update)

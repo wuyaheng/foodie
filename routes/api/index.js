@@ -1,6 +1,6 @@
 const path = require("path");
 const router = require("express").Router();
-const storeRoutes = require("./store");
+const storeRoutes = require("./stores");
 const yelpRoutes = require("./yelp");
 
 // Store routes

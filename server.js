@@ -14,7 +14,7 @@ if(process.env.NODE_ENV === "production") {
 }
 
 mongoose.connect(
-    process.env.MONGODB_URI || "mongodb://localhost/footie",
+    process.env.MONGODB_URI || "mongodb://localhost/foodie",
     {
         useCreateIndex: true,
         useNewUrlParser: true
