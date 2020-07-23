@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Jumbotron from '../components/Jumbotron';
 import Card from '../components/Card';
 import Store from '../components/Store';
 import Footer from '../components/Footer';
@@ -85,7 +84,7 @@ class Home extends Component {
 
                 <Row>
                     <Col size="md-12">
-                        <Card title="Results">
+                        <Card title="Results" icon="fas fa-store"> 
                             {this.state.stores.length ? (
                                 <List>
                                     {this.state.stores.map(store => (
