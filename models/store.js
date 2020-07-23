@@ -19,7 +19,7 @@ const storeSchema = new Schema({
     state: {
         type: String
     },
-    zip_code: {
+    zipcode: {
         type: String
     },
     image: {
@@ -29,6 +29,9 @@ const storeSchema = new Schema({
         type: String
     },
     url: {
+        type: String
+    },
+    source: {
         type: String
     }
 });

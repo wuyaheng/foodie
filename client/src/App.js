@@ -13,7 +13,7 @@ function App() {
       <div>
         <Nav />
         <Switch>
-          <Route exact path="/" cmoponent={Home} />
+          <Route exact path="/" component={Home} />
           <Route exact path="/saved" component={Saved} />
           <Route component={NoMatch} />
         </Switch> 

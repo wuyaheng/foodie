@@ -27,7 +27,7 @@ class Nav extends Component {
     return (
       <nav className="navbar navbar-expand-lg navbar-light mb-2">
         <Link className="navbar-brand" to="/" style={{color:"white"}}>
-          Search Restaurant With Foodie
+          Foodie
         </Link>
         <button
           onClick={this.toggleNav}

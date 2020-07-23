@@ -55,7 +55,7 @@ class Saved extends Component {
                                         city={store.city}
                                         state={store.state}
                                         zip_code={store.zip_code}
-                                        image={store.image}
+                                        image={store.image_url}
                                         url={store.url}
                                         rating={store.rating}
                                         Button={()=> (

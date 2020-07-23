@@ -11,7 +11,8 @@ router.route("/")
 router.route("/:id")
     .get(storeController.findById)
     .put(storeController.update)
-    .delete(storeController.remove);
+    .delete(storeController.remove)
+    .post(storeController.create);
 
 
 module.exports = router;

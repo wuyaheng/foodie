@@ -10,7 +10,7 @@ import Form from "../components/Form";
 
 class Home extends Component {
     state = {
-        store: [],
+        stores: [],
         term: '',
         location: '',
         message: 'Search For A Restaurant'
@@ -49,14 +49,15 @@ class Home extends Component {
             yelpId: store.id,
             name: store.name,
             phone: store.phone,
-            street: store.street,
-            city: store.city,
-            state: store.state,
-            zip_code: store.zip_code,
-            image: store.image,
+            street: store.location && store.location.street,
+            city: store.location && store.location.city,
+            state: store.location && store.location.state,
+            zip_code: store.location && store.location.zip_code,
+            image: store.image_url,
             url: store.url,
-            rating: store.rating
-        }).then(() => this.getStores());
+            rating: store.rating,
+            source: "yelp"
+        }, store.id).then(() => this.getStores());
     }
 
     render() {
@@ -92,11 +93,11 @@ class Home extends Component {
                                             key={store.id}
                                             name={store.name}
                                             phone={store.phone}
-                                            street={store.street}
-                                            city={store.city}
-                                            state={store.state}
-                                            zip_code={store.zip_code}
-                                            image={store.image}
+                                            street={store.location && store.location.street}
+                                            city={store.location && store.location.city}
+                                            state={store.location && store.location.state}
+                                            zip_code={store.location && store.location.zip_code}
+                                            image={store.image_url}
                                             url={store.url}
                                             rating={store.rating} 
                                             Button={()=> (
