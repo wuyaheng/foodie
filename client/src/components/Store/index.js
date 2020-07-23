@@ -25,9 +25,9 @@ function Store( { name, phone, street, city, state, zip_code, image, rating, url
                     <img className="img-thumbnail img-fluid w-100" src={image} alt={name} />
                 </Col>
                 <Col size="12 sm-8 md-10">
-                <p>Rating: {rating}</p>
-                {phone && <p>Phone: {phone}</p>} 
-                <p className="small">Address: {street}, {city}, {state} {zip_code}</p>
+                <p><i class="fas fa-comments"></i> Rating: {rating}</p>
+                {phone && <p><i class="fas fa-phone"></i> {phone}</p>} 
+                <p className="small"><i class="fas fa-map-marker-alt"></i> {city}, {state} {zip_code}</p>
                 </Col>
             </Row>
         </ListItem>
