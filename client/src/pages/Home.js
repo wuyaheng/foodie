@@ -72,7 +72,7 @@ class Home extends Component {
                     </Col>
 
                     <Col size="md-12">
-                        <Card title="Restaurant Search" icon="far fa-book">
+                        <Card title="Restaurant Search" icon="fas fa-search"> 
                             <Form
                                 handleInputChange={this.handleInputChange}
                                 handleFormSubmit={this.handleFormSubmit}
