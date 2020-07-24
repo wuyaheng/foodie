@@ -24,10 +24,10 @@ function Store( { name, phone, street, city, state, zip_code, image, rating, url
                 <Col size="12 sm-4 md-2">
                     <img className="img-thumbnail img-fluid w-100" src={image} alt={name} />
                 </Col>
-                <Col size="12 sm-8 md-10">
+                <Col size="12 sm-8 md-10 pt-2">
                 <p><i class="fas fa-comments"></i> Rating: {rating}</p>
                 {phone && <p><i class="fas fa-phone"></i> {phone}</p>} 
-                <p className="small"><i class="fas fa-map-marker-alt"></i> {city}, {state} {zip_code}</p>
+                <p className="small"><i class="fas fa-map-marker-alt"></i> {street}, {city}, {state} {zip_code}</p>
                 </Col>
             </Row>
         </ListItem>
