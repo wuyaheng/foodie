@@ -5,7 +5,7 @@
 ![image](https://user-images.githubusercontent.com/52837649/88353315-fcb0ff00-cd2a-11ea-87f4-f20273b6094d.png)
 
 ## Description
-Foodie is a full-stack web application that allows users to search for restaurants in a specific location based on their interest. Users can see the restaurant's photos, phone number, address, and ratings. It also allows users to bookmark any restaurant they like for future reference.
+Foodie is a full-stack web application created using React, Express, MongoDB, JavaScript, and yelp API. It allows users to search for restaurants in a specific location based on their interests. Users can see the restaurant's photos, phone number, address, and ratings. It also allows users to bookmark any restaurant they like for future reference.
 
 
 ## Table of Contents
