@@ -17,7 +17,7 @@ class Saved extends Component {
     }
 
     getSavedStores = () => {
-        API.getSavedStores()
+        API.getSavedStores() 
         .then(res => 
             this.setState({
                 stores: res.data
@@ -28,6 +28,7 @@ class Saved extends Component {
     handleStoreDelete = id => {
         API.deleteStore(id).then(res => this.getSavedStores());
     }
+
     render() {
         return (
             <Container>
@@ -58,6 +59,8 @@ class Saved extends Component {
                                         image={store.image}
                                         url={store.url}
                                         rating={store.rating}
+                                        lat={store.lat}
+                                        lon={store.lon} 
                                         Button={()=> (
                                             <button
                                                 style={{backgroundColor: "#2196f3", color: "white"}}

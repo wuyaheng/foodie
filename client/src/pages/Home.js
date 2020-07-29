@@ -55,6 +55,8 @@ class Home extends Component {
             image: store.image_url,
             url: store.url,
             rating: store.rating,
+            lat: store.coordinates.latitude,
+            lon: store.coordinates.longitude,
             source: "yelp"
         }, store.id).then(() => this.getStores());
     }
@@ -99,6 +101,8 @@ class Home extends Component {
                                             image={store.image_url}
                                             url={store.url}
                                             rating={store.rating} 
+                                            lat={store.coordinates.latitude}
+                                            lon={store.coordinates.longitude} 
                                             Button={()=> (
                                                 <button
                                                     onClick={()=> this.handleStoreSave(store.id)}
