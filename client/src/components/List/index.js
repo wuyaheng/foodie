@@ -10,7 +10,6 @@ const gridContainerStyle = {
 
 const gridItemStyle = {
   backgroundColor: "rgba(255, 255, 255, 0.8)",
-  padding: "10px",
   textAlign: "center"
 }
 
