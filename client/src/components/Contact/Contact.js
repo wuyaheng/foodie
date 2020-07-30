@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
 
-
-
 class Contact extends Component {
     constructor(props) {
         super(props);
@@ -52,15 +50,15 @@ class Contact extends Component {
             <form id="contact-us-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
             <div className="form-group">
                 <label htmlFor="name" style={{color: "white"}}>Name</label>
-                <input type="text" className="form-control" value={this.state.name} onChange={this.onNameChange.bind(this)} />
+                <input style={{color:"white"}} type="text" className="form-control" value={this.state.name} onChange={this.onNameChange.bind(this)} />
             </div>
             <div className="form-group">
                 <label htmlFor="exampleInputEmail1" style={{color: "white"}}>Email address</label>
-                <input type="email" className="form-control" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
+                <input style={{color:"white"}} type="email" className="form-control" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
             </div>
             <div className="form-group">
                 <label htmlFor="message" style={{color: "white"}}>Message</label>
-                <textarea className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
+                <textarea style={{color: "white"}} className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
             </div>
             <button type="submit" className="btn btn-primary btn-block">Submit</button>
             </form>

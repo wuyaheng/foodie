@@ -8,11 +8,11 @@ function Store( { name, phone, street, city, state, zip_code, image, rating, url
 
     return (
         <ListItem> 
-        <Row>
+        <Row className="text-center">
             <h3>{name}</h3>
                 <img className="img-thumbnail img-fluid w-100" src={image} alt={name}/>
                
-                <p><i class="fas fa-comments"></i> Rating: {rating}</p>
+                <p style={{display:"block"}}><i class="fas fa-comments"></i> Rating: {rating}</p>
                
                 {phone && <p><i class="fas fa-phone"></i> {phone}</p>} 
              
