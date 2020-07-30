@@ -1,10 +1,12 @@
 const path = require("path");
 const router = require("express").Router();
 const storeRoutes = require("./stores");
+const contactUs = require('./contact-us');
 
 
 // Store routes
 router.use("/store", storeRoutes);
+router.use('/contact-us', contactUs);
 
 
 
