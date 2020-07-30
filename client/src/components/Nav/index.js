@@ -62,6 +62,18 @@ class Nav extends Component {
                 Saved
               </Link>
             </li>
+
+            <li className="nav-item">
+            <Link
+                style={{color:"white"}}
+                onClick={this.toggleNav}
+                className={window.location.pathname === "/about" ? "nav-link active" : "nav-link"}
+                to="/about"
+              >
+                About
+              </Link>
+            </li>
+            
           </ul>
         </div>
       </nav>

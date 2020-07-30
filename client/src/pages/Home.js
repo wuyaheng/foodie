@@ -7,6 +7,7 @@ import { Col, Row, Container } from '../components/Grid';
 import { List } from '../components/List';
 import Form from "../components/Form";
 
+
 class Home extends Component {
     state = {
         stores: [],
@@ -67,7 +68,7 @@ class Home extends Component {
                 <Row>
                     <Col size="md-12">
                         <h1 className="text-center">
-                            <strong>Restaurant Search at Foodie</strong>
+                            <strong>Search Restaurant at Foodie</strong>
                         </h1>
                         <h2 className="text-center">Search for and Save Restaurant of Interest</h2>
                     </Col>
