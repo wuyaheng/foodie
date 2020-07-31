@@ -14,10 +14,10 @@ const gridItemStyle = {
 }
 
 export const List = ({ children }) => (
-  <div style={gridContainerStyle}>
+  <div className="gridContainer" style={gridContainerStyle}>
     {children}
   </div>
 );
 export function ListItem({ children }) {
-  return <div style={gridItemStyle}>{children}</div>;
+  return <div className="gridItem" style={gridItemStyle}>{children}</div>;
 }
