@@ -19,5 +19,5 @@ export const List = ({ children }) => (
   </div>
 );
 export function ListItem({ children }) {
-  return <div className="gridItem" style={gridItemStyle}>{children}</div>;
+  return <div style={gridItemStyle}>{children}</div>;
 }
